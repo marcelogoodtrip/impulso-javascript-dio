@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-self</title>
+    <style>
+        .container {
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        .item {
+            background-color: #990011FF;
+            color: #FCF6F5FF;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .align-container {
+            align-items: center;
+        }
+        .center {
+            align-self: center;
+        }
+        .start {
+            align-self: flex-start;
+        }
+        .end {
+            align-self: flex-end;
+        }
+        .baseline {
+            align-self: baseline;
+        }
+        .stretch {
+            align-self: stretch;
+        }
+        .auto {
+            align-self: auto;
+        }
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <div class="container align-container">
+        <div class="item center">A</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem impsum lorem impsum</div>
+        <div class="item center">Item 4</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container align-container">
+        <div class="item start">A</div>
+        <div class="item start">123</div>
+        <div class="item start">Lorem impsum lorem impsum</div>
+        <div class="item start">Item 4</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container align-container">
+        <div class="item end">A</div>
+        <div class="item end">123</div>
+        <div class="item end">Lorem impsum lorem impsum</div>
+        <div class="item end">Item 4</div>
+    </div>
+    <p>baseline</p>
+    <div class="container align-container">
+        <div class="item baseline">A</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem impsum lorem impsum</div>
+        <div class="item baseline">Item 4</div>
+    </div>
+    <p>stretch</p>
+    <div class="container align-container">
+        <div class="item stretch">A</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem impsum lorem impsum</div>
+        <div class="item stretch">Item 4</div>
+    </div>
+    <p>auto</p>
+    <div class="container align-container">
+        <div class="item auto">A</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem impsum lorem impsum</div>
+        <div class="item auto">Item 4</div>
+    </div>
+    <p>mix</p>
+    <div class="container align-container">
+        <div class="item baseline">A</div>
+        <div class="item stretch">abc</div>
+        <div class="item end">123</div>
+        <div class="item center">Lorem impsum lorem impsumorem impsum lorem impsum</div>
+        <div class="item start">Item 4</div>
+    </div>
+
+    <h1>column</h1>
+    <p>center</p>
+    <div class="container align-container column">
+        <div class="item center">A</div>
+        <div class="item center">123</div>
+        <div class="item center">Lorem impsum lorem impsum</div>
+        <div class="item center">Item 4</div>
+    </div>
+    <p>flex-start</p>
+    <div class="container align-container column">
+        <div class="item start">A</div>
+        <div class="item start">123</div>
+        <div class="item start">Lorem impsum lorem impsum</div>
+        <div class="item start">Item 4</div>
+    </div>
+    <p>flex-end</p>
+    <div class="container align-container column">
+        <div class="item end">A</div>
+        <div class="item end">123</div>
+        <div class="item end">Lorem impsum lorem impsum</div>
+        <div class="item end">Item 4</div>
+    </div>
+    <p>baseline</p>
+    <div class="container align-container column">
+        <div class="item baseline">A</div>
+        <div class="item baseline">123</div>
+        <div class="item baseline">Lorem impsum lorem impsum</div>
+        <div class="item baseline">Item 4</div>
+    </div>
+    <p>stretch</p>
+    <div class="container align-container column">
+        <div class="item stretch">A</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">Lorem impsum lorem impsum</div>
+        <div class="item stretch">Item 4</div>
+    </div>
+    <p>auto</p>
+    <div class="container align-container column">
+        <div class="item auto">A</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem impsum lorem impsum</div>
+        <div class="item auto">Item 4</div>
+    </div>
+    <p>mix</p>
+    <div class="container align-container column">
+        <div class="item baseline">A</div>
+        <div class="item stretch">abc</div>
+        <div class="item end">123</div>
+        <div class="item center">Lorem impsum lorem impsumorem impsum lorem impsum</div>
+        <div class="item start">Item 4</div>
+    </div>
+</body>
+</html>
